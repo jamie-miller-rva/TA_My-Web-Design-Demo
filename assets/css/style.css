@@ -1,1 +1,97 @@
 /* Web demo style sheet to customize Bootstrap 4.5 */
+
+html {
+    /* Positioning */
+    position: relative;
+    /* Box-model */
+    min-height: 100%;
+}
+
+body {
+    /* Positioning */
+    /* Visual */
+    background-color: whitesmoke;
+}
+
+#navbar-custom {
+    background-color: whitesmoke;
+}
+
+#brand-logo {
+    /* Box-model */
+    height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* Positioning */
+    margin-left: 60px;
+    font-family: Georgia, Times, "Times New Roman";
+    /* Typography */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    /* Visual */
+    background: rgb(57, 170, 170);
+}
+
+.jumbotron {
+    /* Box-model */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: lightblue
+}
+
+.summary-box {
+    /* Box-model */
+    padding-top: 5px;
+}
+
+.summary-content>p {
+    /* Box-model */
+    padding-top: 10px;
+    margin-right: 20px;
+    /* Typography */
+    font-size: 18px;
+    color: darkslategray;
+}
+
+.summary-image {
+    /* Positioning */
+    float: left;
+    /* Box-model */
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.nav-image-area {
+    /* Box-model */
+    /* padding: 10px 10px 10px; */
+    /* Positioning */
+    margin-top: 30px;
+}
+
+.img-thumbnail {
+    /* Box-model */
+    margin-left: 0px;
+}
+
+
+/* footer */
+
+.footer {
+    /* Positioning */
+    bottom: 0;
+    height: 50px;
+    margin-top: 30px;
+    background-color: rgb(57, 170, 170);
+}
+
+.text-muted {
+    /* Positioning */
+    margin-top: 10px;
+    /* Typograpy */
+    font-size: 20;
+    color: white;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
