@@ -3,12 +3,116 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humidity</title>
+
+    <!-- Responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap startup code -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Link to style.css file located in css folder of assets folder-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
 </head>
+<!-- ##################################################################################################### -->
 
 <body>
+    <!-- Start of navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="navbar-custom">
+        <div class="container-fluid navbar-general">
+            <!-- Add col-sm-8 for left side of navbar (moves remainder of navbar to the right)-->
+            <div class="col-sm-9">
+                <a class="navbar-brand" href="../index.html" id="navbar-logo">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <!-- Add col-sm-4 for right side of navbar  -->
+            <div class="col-sm-3">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-right">
+                        <!-- Start of navbar dropdown menu -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                            </div>
+                        </li>
+                        <!-- End of navbar dropdown menu -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of jumbotron -->
+    <div class="jumbotron">
+        <div class="row">
+            <!-- Start of Description (Left Box) -->
+            <div class="col-md-7">
+                <section class="visualizations-description-content">
+                    <!-- Title -->
+                    <h1 class="description-header"> Humidity</h1>
+                    <!-- Horizonal Row -->
+                    <hr />
+                    <img src="../assets/images/Fig2.png" alt="Max Temperature Plot" class="visualization-description-image">
+                    <!-- Paragraph -->
+                    <article class="description-content-text">
+                        <p>Our analysis did not find any obvious correlation between latittude and humidity. There is a clear band of many data points at 100% humidity, however; further analysis is required.</p>
+                    </article>
+                </section>
+            </div>
+
+            <!-- Start of Navigation by Image Area (Right Box) - -->
+            <!-- Title -->
+            <div class="col-md-5">
+                <section class="nav-image-area">
+                    <h2 class="nav-image-header">Visualizations</h2>
+                    <!-- Horizonal Row -->
+                    <hr />
+                    <!-- Navigation by image using anchor tag (to point href to destination html page located in visualizaitons folder) -->
+                    <!-- And img tag to point to image to be displayed (images are located in the images folder of assests folder-->
+                    <div class="row row-cols-2" id="Nav-images">
+                        <a href="temp.html"><img src="../assets/images/Fig1.png " alt="Latitude vs. Max Temperature Plot " class="img-thumbnail"></a>
+                        <a href="humidity.html"><img src="../assets/images/Fig2.png " alt="Latitude vs. Humidity Plot " class="img-thumbnail"></a>
+                        <a href="cloudiness.html"><img src="../assets/images/Fig3.png " alt="Latitude vs. Cloudiness Plot " class="img-thumbnail"></a>
+                        <a href="wind.html"><img src="../assets/images/Fig4.png " alt="Latitude vs. Wind Speed Plot " class="img-thumbnail"></a>
+                    </div>
+                </section>
+            </div>
+            <!-- End of Right Box - Navigation by Image Area -->
+        </div>
+    </div>
+    <!-- End of Jumbotron -->
+
+    <!-- Start of Footer Using Fixed Bottom navbar -->
+    <footer class="footer py-3">
+        <div class="col-12">
+            <span class="footer-text-muted">Latitude Study: Lead Analyst - Jamie Miller</span>
+        </div>
+    </footer>
+
+    <!-- ##################################################################################################### -->
+
+    <!-- Bootstrap jquery, js and popper bundle from Bootstrap Quick Start-->
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
 
 </body>
+
 
 </html>
