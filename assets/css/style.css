@@ -14,7 +14,7 @@ body {
 }
 
 #navbar-custom {
-    background-color: whitesmoke;
+    background-color: rgb(65, 138, 138);
 }
 
 #brand-logo {
@@ -23,7 +23,7 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     /* Positioning */
-    margin-left: 60px;
+    margin-left: 5px;
     font-family: Georgia, Times, "Times New Roman";
     /* Typography */
     font-size: 20px;
@@ -46,6 +46,22 @@ body {
     padding-top: 5px;
 }
 
+.summary-header {
+    font: bold;
+    font-size: 45px;
+    color: rgba(72, 128, 120, 0.671);
+}
+
+.summary-image {
+    /* Positioning */
+    float: left;
+    /* Box-model */
+    width: 700px;
+    height: 600px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
 .summary-content>p {
     /* Box-model */
     padding-top: 10px;
@@ -55,24 +71,22 @@ body {
     color: darkslategray;
 }
 
-.summary-image {
-    /* Positioning */
-    float: left;
-    /* Box-model */
-    margin-top: 10px;
-    margin-right: 20px;
-}
-
 .nav-image-area {
     /* Box-model */
     /* padding: 10px 10px 10px; */
     /* Positioning */
-    margin-top: 30px;
+    margin-top: 24px;
 }
 
-.img-thumbnail {
+.vis-header {
+    font-size: 30px;
+    color: rgb(72, 128, 120, 0.671);
+}
+
+.nav-images {
     /* Box-model */
-    margin-left: 0px;
+    width: 350px;
+    height: 350px;
 }
 
 
@@ -80,18 +94,17 @@ body {
 
 .footer {
     /* Positioning */
-    bottom: 0;
     height: 50px;
-    margin-top: 30px;
-    background-color: rgb(57, 170, 170);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: rgb(65, 138, 138);
 }
 
 .text-muted {
     /* Positioning */
-    margin-top: 10px;
+    margin-left: 175px;
+    float: left;
     /* Typograpy */
-    font-size: 20;
-    color: white;
     font-weight: bold;
-    background-color: whitesmoke;
+    background-color: rgb(153, 200, 200);
 }
