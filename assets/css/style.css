@@ -228,6 +228,21 @@
     }
     /* End of Visualization Styling */
     /* Start of Table Styling */
+    
+    .data-table {
+        /* Positioning */
+        margin: 10px 10px 10px 10px;
+        /* Box-model */
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px 10px 10px;
+        /* Typograpy */
+        font-family: Georgia, Times, "Times New Roman";
+        font-weight: normal;
+        font-display: block;
+        color: black;
+        table-layout: auto;
+    }
     /* End of Table Styling */
     /* footer */
     
