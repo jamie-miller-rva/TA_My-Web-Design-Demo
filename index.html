@@ -15,25 +15,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-
 <!-- ##################################################################################################### -->
 
 <body>
     <!-- Start of navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="navbar-custom">
-        <div class="container-fluid">
-
+        <div class="container-fluid navbar-general">
             <!-- Add col-sm-8 for left side of navbar (moves remainder of navbar to the right)-->
-            <div class="col-sm-8">
-                <a class="navbar-brand" href="index.html" id="brand-logo">Latitude</a>
+            <div class="col-sm-9">
+                <a class="navbar-brand" href="index.html" id="navbar-logo">Latitude</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
             <!-- Add col-sm-4 for right side of navbar  -->
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="nav nav-tabs">
+                    <ul class="nav navbar-right">
                         <!-- Start of navbar dropdown menu -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -55,6 +53,7 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </nav>
@@ -63,17 +62,16 @@
     <!-- Start of Jumbotron -->
     <div class="jumbotron">
         <div class="row">
-
-            <!-- Start of Left Box -->
-            <div class="col-md-8">
-                <section class="summary-box">
+            <!-- Start of Description (Left Box) -->
+            <div class="col-md-7">
+                <section class="description-content">
                     <!-- Title -->
-                    <h1 class="summary-header"> Summary: Latitude vs. X</h1>
+                    <h1 class="description-header"> Summary: Latitude vs. X</h1>
                     <!-- Horizonal Row -->
                     <hr />
-                    <img src="assets/images/Fig1.png" alt="Max Temperature Plot" class="summary-image">
+                    <img src="assets/images/Fig1.png" alt="Max Temperature Plot" class="description-image">
                     <!-- Paragraph -->
-                    <article class="summary-content">
+                    <article class="description-content-text">
                         <p>The purpose of this project was to analyze how weather changes as you get closer to the equator (changes in latitude). To acomplish this analysis, we first pulled ata from the OpenWeather mapAPI to assemble a dataset of over 500
                             randomly selected cities.</p>
                         <p>After assembing the dataset, we used matplotlib to plot various aspects of the wather vs. latitude. Factors we investigated included: temperature, coludiness, wind speed and humidity. This site provides the source data and visualizations
@@ -82,11 +80,11 @@
                 </section>
             </div>
 
-            <!-- Start of Right Box - Navigation by Image Area-->
+            <!-- Start of Navigation by Image Area (Right Box) - -->
             <!-- Title -->
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <section class="nav-image-area">
-                    <h2 class="vis-header">Visualizations</h2>
+                    <h2 class="nav-image-header">Visualizations</h2>
                     <!-- Horizonal Row -->
                     <hr />
                     <!-- Navigation by image using anchor tag (to point href to destination html page located in visualizaitons folder) -->
@@ -97,8 +95,8 @@
                         <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png " alt="Latitude vs. Cloudiness Plot " class="img-thumbnail"></a>
                         <a href="visualizations/wind.html"><img src="assets/images/Fig4.png " alt="Latitude vs. Wind Speed Plot " class="img-thumbnail"></a>
                     </div>
+                </section>
             </div>
-            </section>
             <!-- End of Right Box - Navigation by Image Area -->
         </div>
     </div>
@@ -107,7 +105,7 @@
     <!-- Start of Footer Using Fixed Bottom navbar -->
     <footer class="footer py-3">
         <div class="col-12">
-            <span class="text-muted text-center">Latitude Study: Lead Analyst - Jamie Miller</span>
+            <span class="footer-text-muted">Latitude Study: Lead Analyst - Jamie Miller</span>
         </div>
     </footer>
 

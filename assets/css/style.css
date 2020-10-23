@@ -1,5 +1,8 @@
 /* Web demo style sheet to customize Bootstrap 4.5 */
 
+
+/* Default Styling */
+
 html {
     /* Positioning */
     position: relative;
@@ -10,23 +13,36 @@ html {
 body {
     /* Positioning */
     /* Visual */
-    background-color: whitesmoke;
+    /* background-color: white; */
 }
 
-#navbar-custom {
-    background-color: rgb(65, 138, 138);
-}
 
-#brand-logo {
+/* End Default Stying */
+
+
+/* Start Navbar Sytling */
+
+.navbar-general {
     /* Box-model */
-    height: 45px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 50px;
+    /* Typography */
+    font-family: Georgia, Times, "Times New Roman";
+    font-size: 20px;
+    color: black;
+    /* Visual */
+    background-color: white;
+}
+
+#navbar-logo {
+    /* Box-model */
+    height: 60px;
+    width: 135px;
+    padding: 10px 5px 5px 5px;
     /* Positioning */
-    margin-left: 5px;
+    margin-left: 40px;
     font-family: Georgia, Times, "Times New Roman";
     /* Typography */
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -34,60 +50,117 @@ body {
     background: rgb(57, 170, 170);
 }
 
-.jumbotron {
+#navbar-logo:hover {
+    opacity: 0.7;
+}
+
+.navbar-right {
+    /* Positioning */
+    /* Box-model note: padding is top-right-bottom-left*/
+    padding: 30px 10px 20px 175px;
+    /* Typography */
+    font-size: 16px;
+    ;
+}
+
+.navbar-right li>a {
+    /* Typography */
+    color: gray;
+}
+
+.navbar-right li>a:hover {
+    color: rgb(57, 170, 170);
+}
+
+
+/* End Navbar Styling */
+
+
+/* Start General Description Styling (Left Box) */
+
+.description-content {
+    /* Positioning */
+    margin: 10px 10px 10px 200px;
     /* Box-model */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: lightblue
+    width: 800px;
+    height: 475px;
+    padding: 30px 10px 10px 10px;
+    /* Visual */
+    background-color: white;
 }
 
-.summary-box {
-    /* Box-model */
-    padding-top: 5px;
+.description-header {
+    /* Positioning */
+    margin: 5px 5px 5px 15px;
+    /* Typography */
+    font-family: Georgia, Times, "Times New Roman";
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(57, 170, 170);
 }
 
-.summary-header {
-    font: bold;
-    font-size: 45px;
-    color: rgba(72, 128, 120, 0.671);
-}
-
-.summary-image {
+.description-image {
     /* Positioning */
     float: left;
+    margin: 10px 20px 10px 10px;
     /* Box-model */
-    width: 700px;
-    height: 600px;
-    margin-top: 10px;
-    margin-right: 20px;
+    width: 250px;
+    height: 250px;
 }
 
-.summary-content>p {
+.description-content-text>p {
+    /* Positioning */
+    margin: 10px 10px 10px 10px;
     /* Box-model */
-    padding-top: 10px;
-    margin-right: 20px;
+    padding: 15px 10px 10px 10px;
     /* Typography */
     font-size: 18px;
     color: darkslategray;
 }
 
+
+/* End Description Styling (Left Box) */
+
+
+/* Start Nav-image Styling */
+
 .nav-image-area {
-    /* Box-model */
-    /* padding: 10px 10px 10px; */
     /* Positioning */
-    margin-top: 24px;
-}
-
-.vis-header {
-    font-size: 30px;
-    color: rgb(72, 128, 120, 0.671);
-}
-
-.nav-images {
+    margin: 10px 10px 10px 0px;
     /* Box-model */
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 475px;
+    padding: 30px 10px 10px 10px;
+    /* Visual */
+    background-color: white;
 }
+
+.nav-image-header {
+    /* Positioning */
+    margin: 20px 10px 10px 10px;
+    /* Typography */
+    font-family: Georgia, Times, "Times New Roman";
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(57, 170, 170);
+}
+
+.img-thumbnail {
+    /* Positioning */
+    margin: 2px 0px 5px 30px;
+    /* Box-model */
+    width: 150px;
+    height: 150px;
+    padding: 10px 10px 10px 10px;
+}
+
+.img-thumbnail:hover {
+    /* Visuals */
+    opacity: 0.7;
+}
+
+
+/* End Nav-image Styling */
 
 
 /* footer */
@@ -95,16 +168,16 @@ body {
 .footer {
     /* Positioning */
     height: 50px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin: 40px 0px 30px 0px;
     background-color: rgb(65, 138, 138);
 }
 
-.text-muted {
+.footer-text-muted {
     /* Positioning */
-    margin-left: 175px;
+    margin: 5px 10px 5px 10px;
     float: left;
     /* Typograpy */
+    font-family: Georgia, Times, "Times New Roman";
     font-weight: bold;
-    background-color: rgb(153, 200, 200);
+    color: white;
 }
