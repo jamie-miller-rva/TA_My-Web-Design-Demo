@@ -163,6 +163,70 @@ body {
 /* End Nav-image Styling */
 
 
+/* Start of Comparison Styling */
+
+.comparison-content {
+    /* Positioning */
+    margin: 0px 10px 10px 10px;
+    /* Box-model */
+    width: 1200px;
+    height: 1000px;
+    padding: 5px 10px 10px 0px;
+    /* Visual */
+    background-color: white;
+}
+
+.comparison-nav-instructions {
+    /* Positioning */
+    margin: 5px 5px 15px 15px;
+    /* Typography */
+    font-family: Georgia, Times, "Times New Roman";
+    font-weight: lighter;
+    font-size: 18px;
+    color: black;
+}
+
+.comparison-title {
+    /* Positioning */
+    margin: 5px 5px 5px 15px;
+    /* Typography */
+    font-family: Georgia, Times, "Times New Roman";
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(57, 170, 170);
+}
+
+.comparison-header {
+    /* Positioning */
+    margin: 0px 10px 0px 0px;
+    /* Topography */
+    font-family: Georgia, Times, "Times New Roman";
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(57, 170, 170);
+    text-align: center;
+}
+
+.comparison-image {
+    /* Positioning */
+    margin: 0px 5px 10px 15px;
+    /* Box-model */
+    width: 575px;
+    height: 400px;
+    padding: 5px 5px 5px 5px;
+}
+
+.comparison-footer {
+    /* Positioning */
+    height: 50px;
+    margin: 40px 0px 30px 0px;
+    background-color: rgb(65, 138, 138);
+}
+
+
+/* End of Comparison Styling */
+
+
 /* footer */
 
 .footer {
