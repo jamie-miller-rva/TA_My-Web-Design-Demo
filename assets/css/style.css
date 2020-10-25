@@ -11,7 +11,7 @@
     body {
         /* Positioning */
         /* Visual */
-        /* background-color: white; */
+        background-color: white;
     }
     /* End Default Stying */
     /* Start Navbar Sytling */
@@ -28,14 +28,14 @@
     }
     
     #navbar-logo {
+        /* Positioning */
+        margin-left: 40px;
         /* Box-model */
         height: 60px;
         width: 135px;
         padding: 10px 5px 5px 5px;
-        /* Positioning */
-        margin-left: 40px;
-        font-family: Georgia, Times, "Times New Roman";
         /* Typography */
+        font-family: Georgia, Times, "Times New Roman";
         font-size: 25px;
         font-weight: bold;
         text-align: center;
@@ -51,10 +51,10 @@
     .navbar-right {
         /* Positioning */
         /* Box-model note: padding is top-right-bottom-left*/
-        padding: 30px 10px 20px 175px;
+        height: 10px;
+        padding: 5px 10px 20px 175px;
         /* Typography */
         font-size: 16px;
-        ;
     }
     
     .navbar-right li>a {
@@ -64,6 +64,29 @@
     
     .navbar-right li>a:hover {
         color: rgb(57, 170, 170);
+    }
+    /* Media query for Nav-bar */
+    
+    @media only screen and (max-width: 800px) {
+        .navbar-right {
+            background-color: #4aaaa5;
+        }
+        #navbar-logo {
+            /* Positioning (change from above)*/
+            margin-left: 0;
+            /* Box-model - (just the width changes)*/
+            width: 100%;
+            height: 60px;
+            padding: 5px 5px 5px 5px;
+            /* Typography (no changes)*/
+            font-family: Georgia, Times, "Times New Roman";
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            /* Visual (no changes)*/
+            background: rgb(57, 170, 170);
+        }
     }
     /* End Navbar Styling */
     /* Start General Description Styling (Left Box) */
@@ -106,6 +129,7 @@
         /* Typography */
         font-size: 18px;
         color: darkslategray;
+        /* Visual */
     }
     /* End Description Styling (Left Box) */
     /* Start Nav-image Styling */
@@ -201,7 +225,9 @@
     .comparison-footer {
         /* Positioning */
         height: 50px;
+        /* Box-mode */
         margin: 40px 0px 30px 0px;
+        /* Visual */
         background-color: rgb(65, 138, 138);
     }
     /* End of Comparison Styling */
@@ -248,8 +274,10 @@
     
     .footer {
         /* Positioning */
-        height: 50px;
         margin: 40px 0px 30px 0px;
+        /* Box-model */
+        height: 50px;
+        /* Visual */
         background-color: rgb(65, 138, 138);
     }
     

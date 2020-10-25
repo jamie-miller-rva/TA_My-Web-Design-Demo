@@ -21,40 +21,39 @@
     <!-- Start of navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid navbar-general">
-            <!-- Add col-sm-8 for left side of navbar (moves remainder of navbar to the right)-->
-            <div class="col-sm-9">
+
+            <!-- Add col-sm-8 navbar (moves remainder of navbar to the right)-->
+            <div class="row col-sm-9">
                 <a class="navbar-brand" href="index.html" id="navbar-logo">Latitude</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <!-- Add col-sm-4 for right side of navbar  -->
-            <div class="col-sm-3">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-right">
-                        <!-- Start of navbar dropdown menu -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Plots
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
-                                <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
-                                <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
-                                <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
-                            </div>
-                        </li>
-                        <!-- End of navbar dropdown menu -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="comparison.html">Comparison</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="data.html">Data</a>
-                        </li>
-                    </ul>
-                </div>
 
+            <!-- Right side of Navbar -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-right">
+                    <!-- Start of navbar dropdown menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <!-- End of navbar dropdown menu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
             </div>
+
+
         </div>
     </nav>
     <!-- End of navbar -->
@@ -63,39 +62,43 @@
     <div class="jumbotron">
         <div class="row">
             <!-- Start of Description (Left Box) -->
-            <div class="col-md-7">
-                <section class="description-content">
-                    <!-- Title -->
-                    <h1 class="description-header"> Summary: Latitude vs. X</h1>
-                    <!-- Horizonal Row -->
-                    <hr />
-                    <img src="assets/images/Fig1.png" alt="Max Temperature Plot" class="description-image">
-                    <!-- Paragraph -->
-                    <article class="description-content-text">
-                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator (changes in latitude). To acomplish this analysis, we first pulled ata from the OpenWeather mapAPI to assemble a dataset of over 500
-                            randomly selected cities.</p>
-                        <p>After assembing the dataset, we used matplotlib to plot various aspects of the wather vs. latitude. Factors we investigated included: temperature, coludiness, wind speed and humidity. This site provides the source data and visualizations
-                            created as part of the analysis, as well as explanations and descriptions of any trends and correclations observed.</p>
-                    </article>
-                </section>
+            <div class="col-sm-7">
+                <div class="row">
+                    <section class="description-content">
+                        <!-- Title -->
+                        <h1 class="description-header"> Summary: Latitude vs. X</h1>
+                        <!-- Horizonal Row -->
+                        <hr />
+                        <img src="assets/images/Fig1.png" alt="Max Temperature Plot" class="description-image">
+                        <!-- Paragraph -->
+                        <article class="description-content-text">
+                            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator (changes in latitude). To acomplish this analysis, we first pulled ata from the OpenWeather mapAPI to assemble a dataset of over
+                                500 randomly selected cities.</p>
+                            <p>After assembing the dataset, we used matplotlib to plot various aspects of the wather vs. latitude. Factors we investigated included: temperature, coludiness, wind speed and humidity. This site provides the source data and
+                                visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correclations observed.</p>
+                        </article>
+                    </section>
+                </div>
             </div>
 
             <!-- Start of Navigation by Image Area (Right Box) - -->
             <!-- Title -->
-            <div class="col-md-5">
-                <section class="nav-image-area">
-                    <h2 class="nav-image-header">Visualizations</h2>
-                    <!-- Horizonal Row -->
-                    <hr />
-                    <!-- Navigation by image using anchor tag (to point href to destination html page located in visualizaitons folder) -->
-                    <!-- And img tag to point to image to be displayed (images are located in the images folder of assests folder-->
-                    <div class="row row-cols-2">
-                        <a href="visualizations/temp.html"><img src="assets/images/Fig1.png " alt="Latitude vs. Max Temperature Plot " class="img-thumbnail"></a>
-                        <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png " alt="Latitude vs. Humidity Plot " class="img-thumbnail"></a>
-                        <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png " alt="Latitude vs. Cloudiness Plot " class="img-thumbnail"></a>
-                        <a href="visualizations/wind.html"><img src="assets/images/Fig4.png " alt="Latitude vs. Wind Speed Plot " class="img-thumbnail"></a>
-                    </div>
-                </section>
+            <div class="col-sm-5">
+                <div class="row">
+                    <section class="nav-image-area">
+                        <h2 class="nav-image-header">Visualizations</h2>
+                        <!-- Horizonal Row -->
+                        <hr />
+                        <!-- Navigation by image using anchor tag (to point href to destination html page located in visualizaitons folder) -->
+                        <!-- And img tag to point to image to be displayed (images are located in the images folder of assests folder-->
+                        <div class="row row-cols-2">
+                            <a href="visualizations/temp.html"><img src="assets/images/Fig1.png " alt="Latitude vs. Max Temperature Plot " class="img-thumbnail"></a>
+                            <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png " alt="Latitude vs. Humidity Plot " class="img-thumbnail"></a>
+                            <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png " alt="Latitude vs. Cloudiness Plot " class="img-thumbnail"></a>
+                            <a href="visualizations/wind.html"><img src="assets/images/Fig4.png " alt="Latitude vs. Wind Speed Plot " class="img-thumbnail"></a>
+                        </div>
+                    </section>
+                </div>
             </div>
             <!-- End of Right Box - Navigation by Image Area -->
         </div>
@@ -104,8 +107,11 @@
 
     <!-- Start of Footer Using Fixed Bottom navbar -->
     <footer class="footer py-3">
-        <div class="col-12">
+        <div class="col-8">
             <span class="footer-text-muted">Latitude Study: Lead Analyst - Jamie Miller</span>
+
+            <a class="footer-text-muted" href="https://github.com/jamie-miller-rva/TA_My-Web-Design-Demo">Public Github
+                Respository Link</a>
         </div>
     </footer>
 
